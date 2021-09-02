@@ -19,7 +19,7 @@
 
   <project path="kernel/xiaomi/mt6768" name="based_kernel" remote="fourninesix" revision="eleven-q" clone-depth="1" />
 
-  <project path="vendor/mediatek/opensource" name="vendor_mediatek_opensource" remote="Redmi-MT6768" revision="ten" clone-depth="1" />
+  <project path="vendor/mediatek/opensource" name="vendor_mediatek-opensource" remote="patch" revision="ten" clone-depth="1" />
 
   <project path="device/mediatek/sepolicy" name="device_mediatek_sepolicy" remote="patch" revision="ten" clone-depth="1" />
 
