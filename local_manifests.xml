@@ -15,4 +15,12 @@
 
   <!-- Hardware repos -->
   <project path="hardware/mediatek" name="XD-AOSP/hardware_mediatek" remote="github" revision="eleven" />
+
+  <!-- Telephony/Telecomm Repos -->
+  <remove-project name="android_frameworks_opt_telephony" />
+  <remove-project name="android_packages_services_Telecomm" />
+  <remove-project name="android_packages_services_Telephony" />
+  <project path="frameworks/opt/telephony" name="XD-AOSP/frameworks_opt_telephony" remote="github" revision="eleven" />
+  <project path="packages/services/Telecomm" name="XD-AOSP/packages_services_Telecomm" remote="github" revision="eleven" />
+  <project path="packages/services/Telephony" name="XD-AOSP/packages_services_Telephony" remote="github" revision="eleven" />
 </manifest>
