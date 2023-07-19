@@ -2,18 +2,33 @@
 <manifest>
 
   <!-- Device repos -->
-  <project path="device/xiaomi/mt6768-common" name="Six-Labs/device_xiaomi_mt6768-common" remote="github" revision="lineage-20" />
-  <project path="device/xiaomi/merlinx" name="Six-Labs/device_xiaomi_merlinx" remote="github" revision="lineage-20" />
+  <project path="device/xiaomi/mt6768-common" name="Six-Labs/device_xiaomi_mt6768-common" remote="github" revision="topaz" clone-depth="1" />
+  <project path="device/xiaomi/merlinx" name="Six-Labs/device_xiaomi_merlinx" remote="github" revision="topaz" clone-depth="1" />
+  <project path="device/xiaomi/merlinx-kernel" name="Six-Labs/device_xiaomi_merlinx-kernel" remote="github" revision="tm-qpr3" clone-depth="1" />
 
   <!-- Kernel repos -->
-  <project path="kernel/xiaomi/mt6768" name="Six-Labs/kernel_xiaomi_mt6768" remote="github" revision="lineage-20" />
+  <project path="kernel/xiaomi/mt6768" name="Six-Labs/kernel_xiaomi_mt6768" remote="github" revision="lineage-20" clone-depth="1" />
 
   <!-- Vendor repos -->
-  <project path="vendor/xiaomi/mt6768-common" name="Six-Labs/vendor_xiaomi_mt6768-common" remote="github" revision="lineage-20" />
-  <project path="vendor/xiaomi/merlinx" name="Six-Labs/vendor_xiaomi_merlinx" remote="github" revision="lineage-20" />
+  <project path="vendor/xiaomi/mt6768-common" name="Six-Labs/vendor_xiaomi_mt6768-common" remote="github" revision="lineage-20" clone-depth="1" />
+  <project path="vendor/xiaomi/merlinx" name="Six-Labs/vendor_xiaomi_merlinx" remote="github" revision="lineage-20" clone-depth="1" />
 
-  <!-- Sepolicy repos -->
-  <remove-project name="android_device_mediatek_sepolicy_vndr" />
-  <project path="device/mediatek/sepolicy_vndr" name="LineageOS/android_device_mediatek_sepolicy_vndr" remote="github" revision="lineage-20" />
-
+  <!-- Other repos -->
+  <project path="device/mediatek/sepolicy_vndr" name="AOSPA-RM6785/android_device_mediatek_sepolicy_vndr" remote="github" revision="topaz" clone-depth="1" />
+  <project path="hardware/mediatek" name="AOSPA-RM6785/android_hardware_mediatek" remote="github" revision="topaz" clone-depth="1" />
+  <project path="vendor/mediatek" name="AOSPA-RM6785/android_vendor_mediatek" remote="github" revision="topaz" clone-depth="1" />
+  <project path="external/tinyxml" name="platform/external/tinyxml" remote="aosp" revision="refs/tags/android-11.0.0_r46" clone-depth="1" />
+  <remove-project name="AOSPA/android_packages_services_Telephony" />
+  <project path="packages/services/Telephony" name="platform/packages/services/Telephony" remote="aosp" revision="refs/tags/android-13.0.0_r52" clone-depth="1" />
+  <remove-project name="AOSPA/android_packages_services_Telecomm" />
+  <project path="packages/services/Telecomm" name="platform/packages/services/Telecomm" remote="aosp" revision="refs/tags/android-13.0.0_r52" clone-depth="1" />
+  <project path="hardware/google/pixel" name="platform/hardware/google/pixel" remote="aosp" revision="refs/tags/android-13.0.0_r52" clone-depth="1" />
+  <remove-project name="AOSPA/android_vendor_aospa" />
+  <project path="vendor/aospa" name="Six-Labs/vendor_aospa" remote="github" revision="topaz"  clone-depth="1" >
+   <linkfile src="build.sh" dest="rom-build.sh" />
+  </project>
+  <remove-project name="AOSPA/android_device_qcom_common" />
+  <project path="device/qcom/common" name="Six-Labs/android_device_qcom_common" remote="github" revision="topaz" clone-depth="1" />
+  <remove-project name="AOSPA/android_hardware_lineage_compat" />
+  <project path="hardware/lineage/compat" name="Six-Labs/android_hardware_lineage_compat" remote="github" revision="lineage-20.0" clone-depth="1" />
 </manifest>
