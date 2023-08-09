@@ -14,8 +14,8 @@
   <project path="vendor/xiaomi/merlinx" name="Six-Labs/vendor_xiaomi_merlinx" remote="github" revision="lineage-20" clone-depth="1" />
 
   <!-- Other repos -->
-  <project path="device/mediatek/sepolicy_vndr" name="AOSPA-RM6785/android_device_mediatek_sepolicy_vndr" remote="github" revision="topaz" clone-depth="1" />
-  <project path="hardware/mediatek" name="AOSPA-RM6785/android_hardware_mediatek" remote="github" revision="topaz" clone-depth="1" />
+  <project path="device/mediatek/sepolicy_vndr" name="Six-Labs/device_mediatek_sepolicy_vndr" remote="github" revision="topaz" clone-depth="1" />
+  <project path="hardware/mediatek" name="Six-Labs/hardware_mediatek" remote="github" revision="topaz" clone-depth="1" />
   <project path="vendor/mediatek" name="AOSPA-RM6785/android_vendor_mediatek" remote="github" revision="topaz" clone-depth="1" />
   <project path="external/tinyxml" name="platform/external/tinyxml" remote="aosp" revision="refs/tags/android-11.0.0_r46" clone-depth="1" />
   <remove-project name="AOSPA/android_packages_services_Telephony" />
