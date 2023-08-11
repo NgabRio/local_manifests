@@ -16,6 +16,8 @@
   <!-- Other repos -->
   <remove-project name="AOSPA/android_bootable_recovery" />
   <project path="bootable/recovery" name="Six-Labs/bootable_recovery" remote="github" revision="topaz" clone-depth="1" />
+  <remove-project name="AOSPA/android_frameworks_av" />
+  <project path="frameworks/av" name="Six-Labs/android_frameworks_av" remote="github" revision="topaz" clone-depth="1" />
   <project path="device/mediatek/sepolicy_vndr" name="Six-Labs/device_mediatek_sepolicy_vndr" remote="github" revision="topaz" clone-depth="1" />
   <project path="hardware/mediatek" name="Six-Labs/hardware_mediatek" remote="github" revision="topaz" clone-depth="1" />
   <project path="vendor/mediatek" name="AOSPA-RM6785/android_vendor_mediatek" remote="github" revision="topaz" clone-depth="1" />
